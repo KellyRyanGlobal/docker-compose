@@ -19,7 +19,7 @@ def get_str():
             retries -= 1
             time.sleep(1)
 
-@app_route('/')
+@app.route('/')
 def hello():
     some_str = get.str()
     return "hello! I see {}".format(some_str)
